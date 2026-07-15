@@ -1,16 +1,16 @@
-## Hi there 👋
+# Hi there, I'm Roy Yang! 👋
 
-<!--
-**RoyYang567/RoyYang567** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```json
+{
+  "role": "CS Student @ NYU",
+  "interests": [
+    "Hardware Tinkering", 
+    "SFF ITX Builds", 
+    "Systems Automation"
+  ],
+  "currently_learning": {
+    "languages": ["Python", "JSON / Web APIs"],
+    "tools": ["AI-Assisted Development", "Streamlit"]
+  },
+  "fun_fact": "I love melancholic, summer-themed visual novels, but please don't ask me to game on a Mac."
+}
