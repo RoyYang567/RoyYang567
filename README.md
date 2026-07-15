@@ -9,7 +9,7 @@
     "Basically ANY Techonolgy Related Topics..."
   ],
   "currently_learning": {
-    "languages": ["Python", "C++", "JSON / Web APIs", "Java"],
+    "languages": ["Python", "Java", "C++", "JSON / Web APIs"],
     "tools": ["AI-Assisted Development", "MySQL", "Arduino"]
   },
 }
