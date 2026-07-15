@@ -20,10 +20,29 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      - name: Update README with current month and year
+        run: |
+          # 获取系统当前的 月份+年份，格式类似 "July 2026"
+          CURRENT_DATE=$(date +"%B %Y")
+          echo "Current date: $CURRENT_DATE"
+          
+          # 用 Linux 的 sed 命令，把 README.md 中 START 和 END 标记之间的内容替换为最新的时间
+          sed -i "/<!-- DATE_START -->/,/<!-- DATE_END -->/c\<!-- DATE_START -->\nLast updated: $CURRENT_DATE\n<!-- DATE_END -->" README.md
+
       - name: push github-contribution-grid-snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v4.0.0
         with:
           target_branch: output
           build_dir: dist
+          keep_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit updated README to main
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          # 只有在 README 有变动时才提交，防止空提交报错
+          git diff-index --quiet HEAD || git commit -m "Update last updated date in README [skip ci]"
+          git push origin main
