@@ -13,3 +13,5 @@
     "tools": ["AI-Assisted Development", "MySQL", "Arduino"]
   },
 }
+
+![Snake animation](https://github.com/RoyYang567/RoyYang567/blob/output/github-contribution-grid-snake.svg)
