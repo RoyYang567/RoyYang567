@@ -14,4 +14,4 @@
   },
 }
 
-![Snake animation](https://github.com/RoyYang567/RoyYang567/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/RoyYang567/RoyYang567/raw/output/github-contribution-grid-snake.svg)
